@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container create_dish_contain">
+    <div class="row">
+        <div class="col">
+            <h3 class="name_list_dish">Daukagun kotxeak</h3>
+            <div class="div_list_dish">
+                {% for kotxe in kotxeak %}
+                <p>{{ kotxe.marka }} {{ kotxe.modeloa }}</p>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="col-3 add_dish_div">
+            <form action="addrecord/" method="post">
+                {% csrf_token %}
+                Kotxearen matrikula<br>
+                <input name="kt_matrikula">
+                <br><br>
+                Kotxearen marka<br>
+                <input name="kt_marka">
+                <br><br>
+                Kotxearen modeloa<br>
+                <input name="kt_modeloa">
+                <br><br>
+                Kotxearen kolorea<br>
+                <input name="kt_kolorea">
+                <br><br>
+                Kotxearen alokatzeko prezioa (€)<br>
+                <input name="kt_aloka_prezio">
+                <br><br>
+                <input type="submit" value="Gehitu kotxea">
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

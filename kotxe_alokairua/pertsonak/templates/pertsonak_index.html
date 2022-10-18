@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% load static %}
+
+ <li class="nav-item active">
+                <a class="nav-link" href="add_person">Add new person</a>
+            </li>
+
+<div class="container menu_style" style="margin-left: 20%">
+    <div class="title_div_style"><h1>Pertsonak</h1></div>
+    <br><br>
+    <div class="row" style="margin-left: 10%">
+        {% for pertsona in pertsonak %}
+        <div class="col-4 menu_div_style">
+            <br>
+            <p><b>{{ pertsona.izena }}</b></p>
+            <p><b>{{ pertsona.abizena }}</b></p>
+            <p>DNI: <b>{{ pertsona.dni }} </b></p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container create_dish_contain">
+    <div class="row">
+        <div class="col">
+            <h3 class="name_list_dish">Daukagun pertsonak</h3>
+            <div class="div_list_dish">
+                {% for pertsona in pertsonak %}
+                <p>{{ pertsona.izena }} {{ pertsona.abizena }}</p>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="col-3 add_dish_div">
+            <form action="addrecord/" method="post">
+                {% csrf_token %}
+                Pertsonaren izena<br>
+                <input name="pert_izena">
+                <br><br>
+                Pertsonaren abizena<br>
+                <input name="pert_abizena">
+                <br><br>
+                Pertsonaren dni<br>
+                <input name="pert_dni">
+                <br><br>
+                Pertsonaren alokagai daukan kotxearen_id<br>
+                <input name="perts_aloka">
+                <br><br>
+                <input type="submit" value="Gehitu pertsona">
+            </form>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

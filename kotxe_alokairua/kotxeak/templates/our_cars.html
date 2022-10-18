@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container menu_style" style="margin-left: 20%">
+    <div class="row title_div_style" style="width:90%">
+       <h1 style="justify-content: center">OUR CARS</h1>
+    </div>
+    <br><br>
+
+        {% for kotxe in kotxeak %}
+
+
+
+        <div style="border: solid">
+             <a href="update/{{ kotxe.id }}">
+                 <img style="width: 2%"  src="{% static 'img/edit.png' %}">
+             </a>
+            <a href="delete/{{ kotxe.id }}">
+                <img style="width: 2%" src="{% static 'img/basura.png' %}">
+            </a>
+            <p><b>{{ kotxe.id }}</b></p>
+            <p><b>{{ kotxe.matrikula }}</b></p>
+            <p>Marka: <b>{{ kotxe.marka }}</b></p>
+            <p>Modeloa: <b>{{ kotxe.modeloa }}</b></p>
+            <p>Kolorea: <b>{{ kotxe.kolorea }}</b></p>
+            <p>Alokatzeko prezioa: <b>{{ kotxe.alokatzeko_prezioa }} €</b></p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!--<script src=" {% static 'static/script.js' %}"></script> -->
+{% endblock content %}
+
+
+

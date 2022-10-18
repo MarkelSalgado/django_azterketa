@@ -1,0 +1,116 @@
+.navbar_style{
+    margin-left: 40px;
+}
+
+.navbar_search{
+    margin-left: 600px;
+}
+
+.search_input_style{
+    min-width: 200px;
+}
+
+.search_button_style{
+    margin-left: 35px;
+}
+
+.menu_div_style{
+   border-style: solid;
+   margin: 2%;
+   padding-bottom: 30px;
+}
+
+.menu_style{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.description_hidden{
+    visibility: hidden;
+}
+
+.img_style{
+    max-width: 90%;
+    margin: 3%;
+    margin-top: 15%;
+}
+
+.icono_basura{
+    margin-left: 320%;
+    margin-top: 10%;
+    width: 65%;
+
+}
+
+.icono_edit{
+    margin-top: 10%;
+    width: 75%;
+    margin-left: -30%;
+}
+
+.description_hidden{
+    visibility: hidden;
+}
+
+.title_style{
+    font-family: fantasy;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    margin-left: 50%;
+}
+
+.title_div_style{
+    border-style: double;
+    background-color: #C3C3C3;
+    margin-right: 13%;
+}
+
+.div_list_dish{
+    border-style: dashed;
+    border-radius: 20px;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+    margin-left: 45%;
+
+}
+
+.name_list_dish{
+    margin-left: 46%;
+    font-family: fantasy;
+
+}
+
+.add_dish_div{
+    border-style: double;
+    padding: 2%;
+    text-align: center;
+    background-color: #99E891;
+    margin-right: 30%;
+
+}
+
+.create_dish_contain{
+    margin-top: 3%;
+}
+
+.divimg{
+    display: inline-block;
+}
+
+.update_div{
+    border-style: double;
+    padding: 5%;
+    text-align: center;
+    background-color: #99E891;
+    margin-right: 30%;
+}
+
+.update_izenburua{
+    text-align: center;
+    padding: 5px;
+}
+
+.btn_description{
+    margin-left: 30%;
+}

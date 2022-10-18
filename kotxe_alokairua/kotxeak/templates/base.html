@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'style.css'%}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <title>Kotxe Alokairua</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand navbar_style" href="index">Kotxe Alokairua</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="cars">Our cars</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link">|</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="autoak_gehitu">Add new car</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pertsonak_index">Pertsonak dituzten kotxeak ikusi</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link">|</a>
+            </li>
+        </ul>
+        <div class="navbar_search">
+            <form class="row form-inline my-2 my-lg-0">
+                <div class="col-6">
+                    <input class="form-control mr-sm-2 search_input_style" type="search" placeholder="Search"
+                           aria-label="Search">
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-outline-success my-2 my-sm-0 search_button_style" type="submit">Search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+{% block content %}
+{% endblock %}
+</body>
+</html>

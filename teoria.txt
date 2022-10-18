@@ -1,0 +1,17 @@
+1) Ikusten dugun bezala, proiektu orokorra 'proyecto_gastos' deitzen da eta honen barruan modelo bat daukagu 'gastos' izenarekin. Manage.py erabiltzen da daukagun proiektua runneatzeko, 
+fitxategi horren laguntzaz runserver egitea ahalbidetu daiteke. Settings.py fitxeroan erabiltzen ditugun modulo/aplikazioak zehazteko erabiltzen dugu. Models.py modeloak deklaratzen dugu,
+daukaten osagaiak deklaratzen eta haien mota(CharField...). Views.py erabiltzen ditugun funtzioak zehazten ditugu, hemen modeloak gehitzeko, aldatzeko eta ezabatzeko metodoak jarriko dugu.
+Urls.py gure proiektuaren link-ak esatearren definitzen ditugu, hau da, proiektuarebn loturak eta linkak, hau da nabegatzeko albidetzen duen fitxategia da.
+
+2)Nire ustez, aplikazio eta modeloak gauza berdinak dira. Hau da, proiektu bat sortzen dugu eta honen barruan hainbat aplikazio edo modeloz osatuta egon daitezke.
+
+3)Django bere barnealdean SQLite datu base integratu bat ekartzen du /admin sartuz ikusten dena. Honek asko laguntzen du, beste datu base batzuekin konparatuz, 
+hauen konekxioa aurrezteko.
+
+4)
+
+Model-----> Models.py-en modeloak deklaratu.
+Controller ---> Modeloen kontrola eramateko Urls.py
+View----> template karpeta barruan dauden html-ak
+
+Egitura honekin proiektua ulergarria eta errazagoa egiten da, lehendabiziz modeloa sortzen, ondoren hauen kontrola eramaten eta azkenik hauek isladatzeko html-ak erabiliko ditugu.
